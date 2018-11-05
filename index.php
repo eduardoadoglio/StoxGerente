@@ -18,26 +18,34 @@
 				}
 				else{
 					echo
-					'<link rel="stylesheet" media="screen and (min-width:481px)" id="checkstyle" href="css/home_content.css">
-					<link rel="stylesheet" media="screen and (max-width:480px)" href="css/mobile.css" />';
+					'<link rel="stylesheet" media="screen and (min-width:801px)" id="checkstyle" href="css/home_content.css">
+					<link rel="stylesheet" media="screen and (max-width:800px)" href="css/mobile.css" />';
 				}
 			}
 			else{
 				echo
-				'<link rel="stylesheet" media="screen and (min-width:481px)" id="checkstyle" href="css/home_content.css">
-				<link rel="stylesheet" media="screen and (max-width:480px)" href="css/mobile.css" />';
+				'<link rel="stylesheet" media="screen and (min-width:801px)" id="checkstyle" href="css/home_content.css">
+				<link rel="stylesheet" media="screen and (max-width:800px)" href="css/mobile.css" />';
 			};
 		?>
     <link rel="stylesheet" href="css/upper_menu.css">
     <link rel="stylesheet" href="css/side_menu.css">
+
     <script type="text/javascript" src="js/Chart.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/side_menu_hover.js"></script>
-		<script type="text/javascript" src="js/mobile-menu.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/mobile-menu.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
+
+    	var wWidth = $(window).width();
+    	if(wWidth <= 800){
+    	}
+
         $('.menu-item-mask').on('mouseover', function(){
             $(this).find('i').css('color', '#188DA1');
             $(this).find('.menu-item-desc').css('left', "40px");

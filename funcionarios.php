@@ -4,19 +4,38 @@
 	<title>Funcionários</title>
     <meta charset="utf-8">
 		<link rel="shortcut icon" href="images/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600" rel="stylesheet">
-
-		<link rel="preload" href="css/home_content.css" as="style">
-		<link rel="stylesheet" id="checkstyle" href="css/home_content.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<?php
+			if(isset($_COOKIE['nightmode'])){
+				if($_COOKIE['nightmode'] == "true"){
+					echo '<link rel="stylesheet" id="checkstyle" href="css/night_mode.css">';
+				}
+				else{
+					echo
+					'<link rel="stylesheet" media="screen and (min-width:801px)" id="checkstyle" href="css/home_content.css">
+					<link rel="stylesheet" media="screen and (max-width:800px)" href="css/mobile.css" />';
+				}
+			}
+			else{
+				echo
+				'<link rel="stylesheet" media="screen and (min-width:801px)" id="checkstyle" href="css/home_content.css">
+				<link rel="stylesheet" media="screen and (max-width:800px)" href="css/mobile.css" />';
+			};
+		?>
     <link rel="stylesheet" href="css/upper_menu.css">
     <link rel="stylesheet" href="css/side_menu.css">
-		<script type="text/javascript" src="js/Chart.min.js"></script>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/side_menu_hover.js"></script>
+	<script type="text/javascript" src="js/mobile-menu.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
     <script type="text/javascript">
 		$(document).ready(function(){
         $('.menu-item-mask').on('mouseover', function(){

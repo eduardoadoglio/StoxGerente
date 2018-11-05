@@ -42,21 +42,6 @@ $(document).ready(function(){
 			$('#checkstyle').attr('href', 'css/home_content.css');
 	}
 
-	$('#a').on('click', function(){
-		window.location.href = "index.php";
-	})
-	$('#b').on('click', function(){
-		window.location.href = "funcionarios.php";
-	})
-	$('#c').on('click', function(){
-		window.location.href = "listas.php";
-	})
-	$('#d').on('click', function(){
-		window.location.href = "movimentacoes.php";
-	})
-	$('#e').on('click', function(){
-		window.location.href = "logs.php";
-	})
 })
 var createCookie = function(name, value, days) {
     var expires;

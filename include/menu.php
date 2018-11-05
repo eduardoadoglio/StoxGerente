@@ -2,7 +2,11 @@
   <div class="mobile-menu">
   <img class="menu-item" id="hamburger" src="images/hamburger.svg"/>
   <span class="mobile-title"> VISÃO GERAL </span>
-  <img id="user-image" src="images/max.jpg">
+  <div class="mobile-notification">
+    <span class="mobile-notifbubble">50</span>
+    <i class="far fa-bell card-icon"></i>
+  </div>
+  <!-- <img id="user-image" src="images/max.jpg"> -->
   </div>
   <button class="menu-item" id="empresa">Mercado do Zé</button>
       <!-- INPUT PRA PESQUISA? !-->

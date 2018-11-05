@@ -49,6 +49,23 @@ body{
 	font-size: 28px;
 	font-family: 'Montserrat', sans-serif;
 }
+.mobile-notifbubble{
+	min-width: 15px;
+	max-width: auto;
+	height: 15px;
+	padding: 2px;
+	border-radius: 100px;
+	background-color: rgba(243,20,49,0.7);
+	border: 1px solid rgba(243,20,49,1);
+	line-height: 15px;
+	font-family: 'Lato', sans-serif;
+	font-size: 10px;
+	text-align: center;
+	position: relative;
+	left: 10px;
+	top: 5px;
+	z-index: 1;
+}
 #upper-menu #user-image{
 	width: 40px;
 	height: 40px;
@@ -391,7 +408,8 @@ body{
 	background-color: white;
 	color: #333745;
 	padding: 40px 0px 10px 0px;
-	height: 100%;
+	height: 80%;
+	overflow: auto;
 }
 .card-name{
 	font-size: 20px;
