@@ -1,0 +1,23 @@
+html{
+	height:100%;
+	width:100%;
+}
+body{
+	background-color: #DEDEDE;
+	width:inherit;
+	height: inherit;
+	margin: 0px;
+
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: stretch;
+	align-items: stretch;
+}
+#content{
+	flex:1 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	height: auto;
+}

@@ -1,0 +1,311 @@
+html{
+	height:100%;
+	width:100%;
+}
+body{
+	background-color: #3a3e4c;
+	width:inherit;
+	height: inherit;
+	margin: 0px;
+
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: stretch;
+	align-items: stretch;
+}
+#content{
+	flex-grow:1;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+#content #content-body{
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    padding-left: 100px;
+    padding-top: 20px;
+		overflow: auto;
+}
+#content #content-body .log-card{
+	  display: flex;
+	  flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	  border-radius:4px;
+	  font-family: 'Lato', sans-serif;
+    background-color: #333745;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    flex: 0 0 auto;
+    padding:0px 40px 10px 20px;
+    margin: 0px 10px 15px 0px;
+    font-weight: 0;
+    font-size:24px;
+    color: white;
+    box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.2), 1px 1px 1px 0px rgba(0, 0, 0, 0.19);
+
+    width: 15vw;
+    height: 100px;
+    max-width: 15vw;
+    max-height: 150px;
+}
+#content #content-body .log-card.profit{
+	margin-right:auto;
+}
+#content #content-body .log-card .log-card-footer{
+    display: flex;
+    flex-direction: row;
+}
+#content #content-body .log-card .log-card-footer .log-card-btn{
+    background-color: ;
+    padding:10px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    z-index: -99;
+}
+.table-container{
+	position: relative;
+	width: 40%;
+	height: 40vh;
+	margin-right: 5%;
+	margin-bottom: 20px;
+}
+.graph-container{
+    position: relative;
+		width: 40%;
+    height: 40vh;
+    padding: 2%;
+    margin-right: 5%;
+		margin-bottom: 20px;
+    background-color: #333745;
+		box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.2), 1px 1px 1px 0px rgba(0, 0, 0, 0.19);
+}
+.graph-container-half{
+	position: relative;
+	width: 20%;
+	height: auto;
+	padding: 2%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	background-color: #f3f3f3;
+	box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.2), 1px 1px 1px 0px rgba(0, 0, 0, 0.19);
+}
+.log-title{
+	font-size: 15px;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.log-title:after{
+	content:"";
+	display: block;
+	position: relative;
+	width: 65%;
+	height: 1px;
+	background-color: #188DA1;
+	margin-bottom: 0;
+	margin-top: 2.5px;
+}
+.log-content{
+	font-weight: bold;
+	font-size: 40px;
+	margin-left: 10px;
+}
+.content-table{
+	width: 40%;
+	height: 20vh;
+	border: 1px solid rgba(0,0,0,0.08);
+	margin-right:30px;
+	font-family: 'Lato', sans-serif;
+}
+.content-table tr:nth-child(even){
+	background-color: #333745;
+}
+.content-table tr:nth-child(odd){
+  background-color: #282b35;
+}
+.content-table tr th{
+	font-size: 15px;
+	color: white;
+	padding: 10px 0px 10px 0px;
+	font-weight: normal;
+}
+.content-table tr td{
+	text-align: center;
+	padding: 10px 50px 10px 50px;
+	color: white;
+}
+.profit-icon{
+	font-size: 30px;
+	position: relative;
+	bottom: 10px;
+	color: green;
+}
+.ranking-funcionario{
+	width: 40%;
+}
+.table-func{
+	border: 1px solid rgba(0,0,0,0.08);
+	font-family: 'Lato', sans-serif;
+	width: 40vw;
+	height: 40vh;
+	/* box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.2), 1px 1px 1px 0px rgba(0, 0, 0, 0.19); */
+}
+.table-func tr:nth-child(even){
+	background-color: #333745;
+}
+.table-func tr:nth-child(odd){
+  background-color: #282b35;
+}
+.nm-func{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px 0px 5px 0px;
+}
+.img-func{
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+	border-radius: 100px;
+	border: 1px solid #333745;
+}
+.table-func tr th{
+	font-size: 15px;
+	color: white;
+	padding: 10px 10px 10px 10px;
+	font-weight: normal;
+}
+.table-func tr td{
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	color: white;
+}
+#user-space{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#user-space li{
+	display: inline-block;
+	list-style: none;
+}
+#user-space #user-dropdown{
+	position: relative;
+}
+#user-space li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+#user-space li .user-info{
+	display: none;
+	position: absolute;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	margin-top: 11px;
+	text-align: left;
+	z-index: 9999;
+}
+#user-space li .user-info li{
+	width: 250px;
+	font-family: 'Lato', sans-serif;
+	position: absolute;
+	background-color: #333745;
+	right: -15px;
+}
+#user-space li .user-info.visible{
+    display: flex !important;
+		flex-wrap: wrap;
+}
+.user-info li div hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: auto;
+	background-color: #333745;
+}
+.user-info li .card-image{
+	width: 80px;
+	height: 80px;
+	margin: 0px 10px 0px 15px;
+	border-radius: 100px;
+	border: 5px solid #3d4152;
+	margin-bottom: -45px;
+}
+.user-card{
+	background-color: #3d4152;
+	text-align: center;
+	color: white;
+	padding: 40px 0px 10px 0px;
+	margin: 5px;
+}
+.card-name{
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+.card-location{
+	font-weight: thin;
+	font-size: 15px
+}
+.card-icon{
+	margin-right: 0px !important;
+	color: white;
+	width: 30px;
+}
+.user-options{
+	width: 100%;
+	font-size: 17px;
+	text-align: left !important;
+	margin-left: 0;
+}
+.user-options .card-link{
+	color: white;
+	margin: 0px 0px 0px 10px;
+}
+.notification{
+	min-width: 15px;
+	max-width: auto;
+	height: 15px;
+	border-radius: 100px;
+	background-color: rgba(243,20,49,0.8);
+	border: 1px solid rgba(243,20,49,1);
+	line-height: 15px;
+	font-family: 'Lato', sans-serif;
+	font-size: 10px;
+	text-align: center;
+	position: relative;
+	left: 10px;
+	top: 10px;
+}
+.func-destaque{
+	position: relative;
+	text-align: center;
+	width: 40%;
+	height: 50vh;
+	padding: 0px 3% 0px 3%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	/* box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.2), 1px 1px 1px 0px rgba(0, 0, 0, 0.19); */
+}
+.destaque-img{
+	width: 200px;
+	height: 200px;
+	border-radius: 1000px;
+	border: 15px solid #3e96a2;
+}
+.ribbon{
+	width: 75%;
+	height: auto;
+	margin-top: -100px;
+}

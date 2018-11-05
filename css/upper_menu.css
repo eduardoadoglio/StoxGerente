@@ -1,0 +1,49 @@
+#upper-menu{
+	background-color: #333745;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+	font-size:21px;
+	color:white;
+	flex: 0 0 auto;
+}
+#upper-menu #hamburger{
+	display: none;
+}
+#upper-menu #empresa{
+	background-color: transparent;
+	font-family: 'Playfair Display', serif;
+	color: white;
+	border: none;
+	margin: 10px 0px 10px 0px;
+	font-size:23px !important;
+}
+#upper-menu .menu-itеm{
+	background-color: transparent;
+	padding:11px;
+	border:none;
+
+	color:white;
+	font-size:17px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#upper-menu .menu-item:not(#empresa){
+    letter-spacing: 0.7px;
+}
+
+#upper-menu #user-space{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+    margin-left: auto;
+}
+#upper-menu #user-space i{
+    margin-right: 10px;
+}
+#upper-menu #user-space #user-image{
+    width: 40px;
+    height: 40px;
+    margin: 5px 10px 0px 15px;
+		border-radius: 100px;
+}
