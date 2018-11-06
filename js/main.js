@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	// Funções de Dropdown do usuário
-	$('.dropdown-arrow').on('click', function(){
+	$('.dropdown-arrow, #user-image').on('click', function(){
 		$('.user-info').toggleClass('visible');
 		if($('.notification-info').hasClass('visible')){
 			$('.notification-info').removeClass('visible');

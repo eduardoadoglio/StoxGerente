@@ -19,7 +19,7 @@
       <ul class="notification-info">
           <li>
             <div class="notification-card">
-              Notificações
+              <span class="notification-title">Notificações</span>
             </div>
           </li>
       </ul>
