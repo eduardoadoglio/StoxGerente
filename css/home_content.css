@@ -19,7 +19,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: stretch;
+	align-items: stretch; 
 }
 #content #content-body{
     background-color:transparent;
@@ -31,39 +31,39 @@ body{
     flex: 1 1 auto;
     padding-left: 100px;
     padding-top: 20px;
-		overflow: auto;
+	overflow: auto;
 }
 /* Sistema de linhas */
 #content .row{
-		background-color: transparent;
-		padding-top:30px;
-		padding-bottom:10px;
+	background-color: transparent;
+	padding-top:30px;
+	padding-bottom:10px;
 
-		display: flex;
-		flex:0 1 auto;
-		align-self: stretch;
-		flex-direction: row;
-		flex-wrap: wrap;
+	display: flex;
+	flex:0 1 auto;
+	align-self: stretch;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 /* Cards utilizados na index */
 #content #content-body .log-card{
-		background-color: #f3f3f3;
-		flex: 0 0 auto;
-		display: flex;
-	  flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: space-around;
+	background-color: #f3f3f3;
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 
-	  border-radius:4px;
+	border-radius:4px;
     border-top-left-radius:4px;
     border-top-right-radius:4px;
-		border:3px solid rgba(0, 0, 0, 0.04);
+	border:3px solid rgba(0, 0, 0, 0.04);
 
     padding:0px;
     margin: 0px;
-		margin-right: auto;
+	margin-right: auto;
 
-		font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
     font-weight: 0;
     font-size:24px;
     color: #666666;
@@ -290,7 +290,7 @@ body{
 #user-space li .notification-info{
 	display: none;
 	position: absolute;
-	left: 0;
+	right: 0;
 	padding: 0;
 	margin: 0;
 	margin-top: 11px;

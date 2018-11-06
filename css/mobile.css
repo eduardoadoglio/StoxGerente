@@ -298,8 +298,8 @@ body{
 	margin-top: 10px;
 }
 .log-number{
-	margin-right:60px;
 	align-self: left;
+	font-size: 9vw;
 }
 /* Estilização dos gráficos */
 .graph-wrapper{

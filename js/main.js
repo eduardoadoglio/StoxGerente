@@ -3,6 +3,9 @@ $(document).ready(function(){
 	// Funções de Dropdown do usuário
 	$('.dropdown-arrow').on('click', function(){
 		$('.user-info').toggleClass('visible');
+		if($('.notification-info').hasClass('visible')){
+			$('.notification-info').removeClass('visible');
+		}
 	})
 	$('#content').not('.user-info').on('click', function(){
 		$('.user-info').removeClass('visible');
@@ -12,6 +15,9 @@ $(document).ready(function(){
 	
 	$('.dropdown-bell').on('click', function(){
 		$('.notification-info').toggleClass('visible');
+		if($('.user-info').hasClass('visible')){
+			$('.user-info').removeClass('visible');
+		}
 	})
 	$('#content').not('.notification-info').on('click', function(){
 		$('.notification-info').removeClass('visible');

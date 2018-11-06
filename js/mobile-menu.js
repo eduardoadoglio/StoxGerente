@@ -12,7 +12,7 @@ $(document).ready(function(){
     setTimeout(RemoverClasse, 500);
   })
 
-})
+});
 function RemoverClasse(){
   $('.side-mobile').removeClass('close-menu');
 }
