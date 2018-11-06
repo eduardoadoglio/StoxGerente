@@ -181,24 +181,8 @@ body{
 	display: none;
 }
 
-/* Bolha de notificação ao lado do sino */
-.notification{
-	min-width: 15px;
-	max-width: auto;
-	height: 15px;
-	border-radius: 100px;
-	background-color: rgba(243,20,49,0.8);
-	border: 1px solid rgba(243,20,49,1);
-	line-height: 15px;
-	font-family: 'Lato', sans-serif;
-	font-size: 10px;
-	text-align: center;
-	position: relative;
-	left: 10px;
-	top: 10px;
-	z-index: 1;
-}
 /* Dropdown do usuário */
+
 #user-space #user-dropdown{
 	position: relative;
 }
@@ -280,7 +264,63 @@ body{
 .night-btn{
 	color: #333745 !important;
 }
+
+/* Bolha de notificação ao lado do sino */
+.notification{
+	min-width: 15px;
+	max-width: auto;
+	height: 15px;
+	border-radius: 100px;
+	background-color: rgba(243,20,49,0.8);
+	border: 1px solid rgba(243,20,49,1);
+	line-height: 15px;
+	font-family: 'Lato', sans-serif;
+	font-size: 10px;
+	text-align: center;
+	position: relative;
+	left: 10px;
+	top: 10px;
+	z-index: 1;
+	pointer-events: none;
+}
+/* Dropdown da notificação */
+#user-space #notification-dropdown{
+	position: relative;
+}
+#user-space li .notification-info{
+	display: none;
+	position: absolute;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	margin-top: 11px;
+	text-align: left;
+	z-index: 9999;
+}
+#user-space li .notification-info li{
+	width: 250px;
+	font-family: 'Lato', sans-serif;
+	position: absolute;
+	background-color: #333745;
+	right: -15px;
+}
+#user-space li .notification-info.visible{
+    display: flex !important;
+	flex-wrap: wrap;
+}
+.notification-card{
+	display: flex;
+	background-color: white;
+	text-align: center;
+	color: #333745;
+	padding: 40px 0px 10px 0px;
+	margin: 2px;
+	flex-wrap: wrap;
+}
+
+
 /* Tabela da página de movimentações */
+
 .table-mov{
 	font-family: 'Lato', sans-serif;
 	width: 80%;

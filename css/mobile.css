@@ -109,7 +109,7 @@ body{
 }
 .side-mobile{
 	display: none;
-	background-color: #d8d8d8;
+	background-color: #188da1;
 	position: fixed;
 	max-width: 80vw;
 	min-width: 80vw;
@@ -135,7 +135,7 @@ body{
 	right: 10px;
 	float: right;
 	font-size: 25px;
-	color: #333745;
+	color: #ffffff;
 }
 .side-mobile .side-caption{
 	display: block;

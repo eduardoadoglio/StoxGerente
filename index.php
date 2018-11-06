@@ -35,16 +35,11 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/side_menu_hover.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/mobile-menu.js"></script>
 
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/mobile-menu.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
     <script type="text/javascript">
     $(document).ready(function(){
-
-    	var wWidth = $(window).width();
-    	if(wWidth <= 800){
-    	}
 
         $('.menu-item-mask').on('mouseover', function(){
             $(this).find('i').css('color', '#188DA1');

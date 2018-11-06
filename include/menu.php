@@ -12,10 +12,21 @@
       <!-- INPUT PRA PESQUISA? !-->
       <ul id="user-space">
         <div class="notification"> 3 </div>
-        <li> <i class="fas fa-bell"></i> </li>
+        <li id="notification-dropdown">
+          <a href="#" class="dropdown-toggle">
+            <i class="fas fa-bell dropdown-bell"></i>
+          </a>
+      <ul class="notification-info">
+          <li>
+            <div class="notification-card">
+              Notificações
+            </div>
+          </li>
+      </ul>
+      </li>
         <li><img id="user-image" src="images/max.jpg"> </li>
         <li id="user-dropdown">
-          <a href="#" class="dropdown-toggle">
+          <a href="#">
             <i class="fas fa-caret-down dropdown-arrow"></i>
           </a>
       <ul class="user-info">

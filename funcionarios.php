@@ -30,14 +30,17 @@
 		?>
     <link rel="stylesheet" href="css/upper_menu.css">
     <link rel="stylesheet" href="css/side_menu.css">
+
     <script type="text/javascript" src="js/Chart.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/side_menu_hover.js"></script>
-	<script type="text/javascript" src="js/mobile-menu.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="js/mobile-menu.js"></script>
+
+
     <script type="text/javascript">
-		$(document).ready(function(){
+    $(document).ready(function(){
+
         $('.menu-item-mask').on('mouseover', function(){
             $(this).find('i').css('color', '#188DA1');
             $(this).find('.menu-item-desc').css('left', "40px");
@@ -54,6 +57,7 @@
 
     <!-- AQUI NA INDEX HAVERÃO LOGS DE ATIVIDADES, ORÇAMENTOS, ETC. !-->
 <body>
+	<div id="layer"></div>
 	<?php
 		include("include/menu.php");
 	?>
@@ -61,6 +65,7 @@
 	<section id="content">
 		<?php
 			include("include/side-menu.php");
+			include("include/mobile-menu.php")
 		?>
 
     <main id="content-body">

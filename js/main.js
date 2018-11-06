@@ -1,10 +1,42 @@
 $(document).ready(function(){
+
+	// Funções de Dropdown do usuário
 	$('.dropdown-arrow').on('click', function(){
 		$('.user-info').toggleClass('visible');
 	})
 	$('#content').not('.user-info').on('click', function(){
 		$('.user-info').removeClass('visible');
 	})
+
+	// Funções de Dropdown das notificações
+	
+	$('.dropdown-bell').on('click', function(){
+		$('.notification-info').toggleClass('visible');
+	})
+	$('#content').not('.notification-info').on('click', function(){
+		$('.notification-info').removeClass('visible');
+	})
+
+	// Links do Side-Menu
+
+	$('#a').click(function(){
+		window.location = "index.php";
+	})
+	$('#b').click(function(){
+		window.location = "funcionarios.php";
+	})
+	$('#c').click(function(){
+		window.location = "lotes.php";
+	})
+	$('#d').click(function(){
+		window.location = "movimentacoes.php";
+	})
+	$('#e').click(function(){
+		window.location = "produtos.php";
+	})
+
+	// Ativação do Night Mode
+
 	$('.trigger').on('click', function(){
 		if($('.night-btn').hasClass('nightmode')){
 			$('.night-btn').removeClass('nightmode');
@@ -34,6 +66,8 @@ $(document).ready(function(){
 		}
 	})
 
+	// LocalStorage do Night Mode (verificar se é realmente necessário depois)
+
 	var nightmode = localStorage.getItem("nightmode");
 	if(nightmode == "true"){
 		$('#checkstyle').attr('href', 'css/night_mode.css');
@@ -43,6 +77,8 @@ $(document).ready(function(){
 	}
 
 })
+
+// Cookie do Night Mode
 var createCookie = function(name, value, days) {
     var expires;
     if (days) {
