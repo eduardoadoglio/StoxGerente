@@ -478,20 +478,38 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 .func-title{
-	font-size: 45px;
-	color: #333;
+	display: none;
 }
 .func-caption{
-	font-size: 15px;
-	color: #636262;
-	margin-left: 4px;
+	display: none;
 }
 .func-divider{
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	padding: 0;
+	display: none;
+}
+.add-func{
+	font-size: 10px;
+	color: white;
+	padding: 0px 8px 0px 0px;
+	cursor: pointer;
+	background-color: #2B6ADE;
+	border: none;
+	border-radius: 3px;
+
+}
+.add-func .fas{
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 8px;
+	color: white;
+}
+.add-func span{
+	padding-left:8px;
+	padding-right:8px;
+}
+.func-header-wrapper{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
 }
 .search-container{
 	float: right;

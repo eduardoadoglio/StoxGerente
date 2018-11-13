@@ -86,7 +86,7 @@
                 }
                 ?>
                 <br>
-                <a class="card-link" href="#"><i class="fas fa-sign-out-alt card-icon"></i>Sair</a>
+                <a class="card-link" href="../../logout.php"><i class="fas fa-sign-out-alt card-icon"></i>Sair</a>
               </span>
             </div>
           </li>

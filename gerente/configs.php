@@ -9,6 +9,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600" rel="stylesheet">
 		<?php
+      session_start();
+      if( !isset($_SESSION['id']) )
+      header("Location: ../login.php");
 			if(isset($_COOKIE['nightmode'])){
 				if($_COOKIE['nightmode'] == "true"){
 					echo '<link rel="stylesheet" id="checkstyle" href="css/night_mode.css">';

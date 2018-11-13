@@ -12,6 +12,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<?php
+			session_start();
+			if( !isset($_SESSION['id']) )
+    		header("Location: ../login.php");
 			if(isset($_COOKIE['nightmode'])){
 				if($_COOKIE['nightmode'] == "true"){
 					echo '<link rel="stylesheet" id="checkstyle" href="css/night_mode.css">';
@@ -73,10 +76,12 @@
 				<span class="func-title">Funcionários </span><br>
 				<span class="func-caption">Lista de todos os funcionários</span>
 				<hr class="func-divider">
-				<button class="add-func"><i class="fas fa-plus"></i><span>Adicionar Funcionários</span></button>
-				<div class="search-container">
-					<input type="text" class="search-input" name="func-search" placeholder="Pesquisar funcionários">
-					<button class="search-btn"><i class="fas fa-search search-icon"></i></button>
+				<div class="func-header-wrapper">
+					<button class="add-func"><i class="fas fa-plus"></i><span>Adicionar Funcionários</span></button>
+					<div class="search-container">
+						<input type="text" class="search-input" name="func-search" placeholder="Pesquisar funcionários">
+						<button class="search-btn"><i class="fas fa-search search-icon"></i></button>
+					</div>
 				</div>
 				<table class="table-func" cellspacing="0">
 					<tr>

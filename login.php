@@ -46,7 +46,7 @@
 	<link rel="stylesheet" media="screen and (min-width:800px)" href="css/login.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <link rel="stylesheet"  href="css/fontawesome-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
-    <link rel="stylesheet"  href="css/fontawesome-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
     	$(document).ready(function(){
