@@ -1,0 +1,52 @@
+.content .notification{
+    background-color:transparent;
+    border:1px solid transparent;
+    border-bottom:2px solid rgba(255, 255, 255, 0.5);
+    padding:15px;
+    padding-right:5px;
+
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+}
+.content .notification-icon{
+    margin-top:10px;
+    width:16vw;
+    height:16vw;
+    align-self: center;
+    /*align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+.content .notification-content{
+    background-color: rgba(255, 255, 255, 0);
+    margin-left:8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.content .notification-message{
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.6);
+}
+.content .notification-message b{
+    color:#11519E;
+}
+.content .notification-date{
+    align-self: flex-start !important;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+
+/* RESOLUÇÃO DE CONFLITOS */
+.left-menu{
+  display: none;
+}
+.lg-layout{
+  all:inherit;
+}
+.notifications-wrapper{
+    all: unset;
+}

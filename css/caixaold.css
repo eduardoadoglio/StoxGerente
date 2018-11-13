@@ -1,0 +1,230 @@
+
+*{
+	font-family: 'Lato', sans-serif;
+	user-select: none;
+}
+html{
+	height:100%;
+	width:100%;
+}
+body{
+    background-image: url('../img/caixa-background.png');
+    width:inherit;
+    height: inherit;
+
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+#codbarra{
+	background-color: transparent;
+	position: absolute;
+	border:none;
+	user-select: none;
+	cursor: default;
+	color: transparent;
+    outline: none;
+}
+#valores{
+	background: linear-gradient(to bottom, #E2E7E8, #B5B9BA);
+	padding: 10px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+    color: black;
+    font-size: 24px;
+}
+#valores #indicador{
+	align-self: center;
+	background-color: #BF4221;
+	border-radius: 2000px;
+	width: 4vmin;
+	height: 4vmin;
+}
+#valores .preço-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-size: 28px;
+}
+#valores .preço-wrapper .titulo{
+	font-size: 20px;
+}
+#valores .preço-wrapper #input-pagamento{
+	background-color: transparent;
+	max-width: 90px;
+
+	margin:0px;
+	padding: 0px;
+	outline: none;
+	border:none;
+	
+	text-align: center;
+	font-size:28px;
+}
+#content{
+	flex:1 1 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: stretch;
+}
+/* ----- Tabela de itens ------ */
+#content #items{
+	flex:1 1 auto;
+	padding:20px;
+
+	display: flex;
+	flex-direction: row; /*column no outro layout*/
+	justify-content: stretch;
+}
+#content #items table{
+	flex:1 1 auto;
+	color:white;
+}
+#content #items table td{
+	background-color: #2866BD;
+	border-left:#2866BD solid 1px;
+	border-right:#2866BD solid 1px;
+	border-top:#2866BD solid 1px;
+}
+#content #items table td, th{
+	padding:5px;
+	text-align: center;
+}
+#content #items table th{
+	border-top:#2866BD solid 1px;
+	font-size: 2vmin;
+}
+/* --- Estilo sem tabela --- */
+#content .item-row{
+	display: flex;
+	flex-direction: row;
+
+	color:white;
+}
+#content .item-row img{
+	width:50px;
+}
+#content .item-row .item-text{
+	display: flex;
+	flex-direction: column;
+}
+#content .item-row .item-text{
+
+}
+/* --- FIM DA TABELA DE ITENS ---*/
+
+
+/*---- Exibição única do item ----*/
+#content #item-display{ 
+	background-color: #E2E7E8;
+	border-top:#417BFF solid 2px;
+	flex: 0 1 25%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+#content #item-name{
+	background-color: #417BFF;
+	padding:5px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size:3vmin;
+	color: white;
+}
+#content #item-value{
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size:24px;
+}
+/* --- Footer --- */
+footer#funcionario{
+	background-color: #374452;
+	padding-left:20px;
+	border-top:#417BFF solid 2px;
+	flex: 0.1 1 auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content:stretch;
+	align-items: center;
+}
+footer#funcionario img{
+	width: 14vmin;
+	height: 14vmin;
+}
+footer#funcionario #footer-content{
+	display: flex;
+	flex-direction: row;
+	flex:1 1 auto;
+	align-self: stretch;
+}
+footer#funcionario #footer-content #footer-funcionario{
+	padding-left:40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+footer#funcionario #footer-content #footer-funcionario #btn-fecha-caixa{
+	background-color: #BD543C;
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+	border:none;
+	border-radius: 3px;
+
+	font-size:16px;
+	color:white;
+
+	cursor: pointer;
+}
+footer#funcionario #footer-content .btn-wrapper{
+	margin-left:auto;
+	margin-right:30px;
+	align-self: center;
+}
+footer#funcionario #footer-content #footer-nome{
+	color:white; 
+}
+footer#funcionario #footer-content #btn-confirma-compra{
+	background-color: #15A679;
+	padding:15px;
+	padding-left:25px;
+	padding-right:25px;
+	margin:0px;
+	border:none;
+
+	align-self: center;
+	font-size:22px;
+	color:white;
+
+	cursor: pointer;
+}
+footer#funcionario #footer-content #btn-cancela-compra{
+	background-color: #BD543C;
+	padding:15px;
+	padding-left:25px;
+	padding-right:25px;
+	margin:0px;
+	border:none;
+
+	align-self: center;
+	font-size:22px;
+	color:white;
+
+	cursor: pointer;
+}

@@ -1,0 +1,176 @@
+
+*{
+	font-family: 'Lato', sans-serif;
+	user-select: none;
+}
+html{
+	height:100%;
+	width:100%;
+}
+body{
+    background-image: url('../img/caixa-background.png');
+    padding: 0;
+    margin: 0px;
+    height:100%;
+	width:100%;
+    display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+
+}
+
+.flex-row {
+    width:100%;
+    flex:1;
+    display: flex;
+     flex-direction: row;
+     background-color:rgb(136, 204, 50);
+}
+
+nav{
+    width: 67%;
+    background-color: rgb(104, 196, 124);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+
+
+
+
+}
+
+aside{
+    width: 33%;
+    background-color: rgb(117, 145, 158);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+
+
+}
+
+.item-info{
+    width: 100%;
+    flex: 1;
+    background-color: rgb(63, 213, 102);
+}
+
+.item-troco {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.item-valor{
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: rgb(19, 19, 19);
+    color:white;
+    font-size:72px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.table-header {
+	width:100%;
+	background-color: rgb(232, 191, 45);
+}
+
+.table-items {
+	width:100%;
+	background-color: white;
+}
+
+header {
+    width:100%;
+    height:60px;
+    background-color: rgb(19, 24, 26);
+}
+
+.items {
+    width:100%;
+    background-color: rgb(208, 57, 107);
+    flex: 1;
+	overflow-y: overlay;
+}
+footer{
+    width:100%;
+    height:90px;
+    background-color: rgb(60, 185, 170);
+    display: flex;
+    align-items: center;
+}
+
+#qtd{
+    width:50px;
+}
+
+.buttons{
+    width:60%;
+}
+.inputs {
+    width:40%;
+}
+
+#codbarra, #qtd,#dinheiro,#troco{
+    font-size:20px;
+    border: 3px rgba(212, 212, 212, 1) solid;
+    transition: all 0.2s;
+}
+#codbarra{
+    width:250px;
+
+}
+
+#codbarra:focus {
+    outline: none;
+    border: 3px rgb(47, 114, 126) solid;
+}
+#qtd:focus {
+    outline: none;
+    border: 3px rgb(47, 114, 126) solid;
+}
+
+#dinheiro, #troco {
+    width:150px
+}
+#dinheiro:focus {
+    outline: none;
+    border: 3px rgb(47, 114, 126) solid;
+}
+#troco:focus {
+    outline: none;
+    border: 3px rgb(47, 114, 126) solid;
+}
+
+.dinheiro-container,.troco-container {
+    width:50%;
+    text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+	position: absolute;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
